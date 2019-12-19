@@ -6,7 +6,7 @@ body{
 	background: #a9a9a9;
 }
 
-#container {
+.container {
 	position:relative;
 	width: 320px;
     height: 480px;
@@ -14,12 +14,15 @@ body{
     padding-right: 20px;
 }
 
-#animation {
+#animationBanner2 {
 	position:absolute;
 	top: 0;
-
 }
 
+#animationBanner3 {
+	position:absolute;
+	top: 0;
+}
 
 .background_image
     {
@@ -38,6 +41,14 @@ body{
 	position: absolute;
     left: 105px;
     top: 150px;
+    z-index: 2;
+}
+
+.flasche_hibiskus_image{
+	position: absolute;
+    left: 105px;
+    top: 100px;
+    z-index: 2;
 }
 
 .swipe_icon_image{
@@ -155,7 +166,7 @@ body{
 	width: 80px;
 	height: 85px;
 	top: 400px;
-	left: 220px;	
+	left: 220px;
 }
 
 .pfirsich_image_left_bottom{
@@ -165,4 +176,11 @@ body{
 	height: 80px;
 	top: 280px;
 	left: 45px;	
+}
+
+.combo_image{
+	position: absolute;
+	top: 90px;
+	left: 25px;
+	z-index: 1;
 }
