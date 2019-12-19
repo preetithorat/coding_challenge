@@ -6,6 +6,8 @@
 	position:relative;
 	width: 320px;
     height: 480px;
+    float:left;
+    padding-left: 10px;
 }
 
 .background_image
