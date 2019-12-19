@@ -5,18 +5,34 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css" ></style>
 </head>
-<body>
+<body onload="bottomToTopMove()">
 
 	<div id="container" class="slide">
 		<img src="images/background.png" class="background_image">
 
-		<img src="images/flasche_hibiskus.png" class="flasche_hibiskus_image">
-
+		<div id="animationBanner3">
+			<img src="images/flasche_hibiskus.png" class="flasche_hibiskus_image">
+		</div>
 		<img src="images/combo.png" class="combo_image">
 
 		<img src="images/fuzetea.png" class="fuzetea_image">
 	</div>
 
+	<script>
+		function bottomToTopMove() {
+			var divElement = document.getElementById("animationBanner3");   
+			var startingPoint = 80;
+			var timeInterval = setInterval(frame, 10);
+			function frame() {
+			    if (startingPoint == 0) {
+			      clearInterval(timeInterval);
+			    } else {
+			      divElement.style.top = startingPoint + 'px'; 
+			      startingPoint--;
+			    }
+			}
+		}
+	</script>
 </body>
 
 </html>
