@@ -5,6 +5,7 @@
 body{
 	background: #a9a9a9;
 }
+
 #container {
 	position:relative;
 	width: 320px;
@@ -42,4 +43,72 @@ body{
 	position: absolute;
     left: 25px;
     top: 410px;
+}
+
+.blatt1_image{
+	position: absolute;
+	width: 122px;
+	height:123px;
+	left: 110px;
+	top: 400px;
+}
+
+.blatt2_image_left{
+	position: absolute;
+	width: 85px;
+	height:89px;
+	left: -5px;
+	top: 200px;
+}
+
+.blatt2_image_left_center{
+	position: absolute;
+	transform: rotate(20deg);
+	width: 97px;
+	height:98px;
+	top: 300px;
+	left: -10px;
+}
+
+.blatt2_image_right{
+	position: absolute;
+	transform: rotate(105deg);
+	width: 80px;
+	height:93px;
+	top: 190px;
+	left: 170px;
+}
+
+.blatt2_image_right_center{
+	position: absolute;
+	transform: rotate(-10deg);
+	width: 70px;
+	height:93px;
+	top: 300px;
+	left: 230px;
+}
+
+.blatt2_image_right_bottom{
+	position: absolute;
+	transform: rotate(90deg);
+	width: 65px;
+	height:85px;
+	top: 440px;
+	left: 230px;	
+}
+
+.hibiskus_image{
+
+}
+
+.hibiskus_image{
+	
+}
+
+.hibiskus_image{
+	
+}
+
+.hibiskus_image{
+	
 }
