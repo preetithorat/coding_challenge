@@ -1,4 +1,6 @@
-
+*{
+	box-sizing: content-box;
+}
 
 #container {
 	position:relative;
@@ -24,7 +26,9 @@
     left: 105px;
     top: 150px;
 }
-._image{
-
+.swipe_icon_image{
+	position: absolute;
+    left: 120px;
+    top: 260px;
 }
 
