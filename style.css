@@ -13,9 +13,18 @@
 
     }
 
-.img2 {
+.wisch_text_image {
 	position: absolute;
     left: 25px;
     top: 40px;
+}
+
+.flasche_kontur_image{
+	position: absolute;
+    left: 105px;
+    top: 150px;
+}
+._image{
+
 }
 
