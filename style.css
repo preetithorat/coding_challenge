@@ -73,6 +73,7 @@ body{
 .blatt2_image_right{
 	position: absolute;
 	transform: rotate(105deg);
+	z-index: 2;
 	width: 80px;
 	height:93px;
 	top: 190px;
@@ -97,18 +98,64 @@ body{
 	left: 230px;	
 }
 
-.hibiskus_image{
-
+.hibiskus_image_left_one{
+	position: absolute;	
+	transform: rotate(-40deg);
+	z-index: 2;
+	width: 108px;
+	height:85px;
+	top: 145px;
+	left: 30px;	
 }
 
-.hibiskus_image{
-	
+.hibiskus_image_right_second{
+	position: absolute;
+	transform: rotate(-40deg);
+	width: 118px;
+	height:91px;
+	top: 275px;
+	left: 275px;	
 }
 
-.hibiskus_image{
-	
+.hibiskus_image_right_third{
+	position: absolute;
+	width: 80px;
+	height: 62px;
+	top: 350px;
+	left: 155px;
 }
 
-.hibiskus_image{
-	
+.hibiskus_image_left_fourth{
+	position: absolute;
+	width: 80px;
+	height: 62px;
+	top: 440px;
+	left: -35px;	
+}
+
+.pfirsich_image_right{
+	position: absolute;
+	transform: rotate(10deg);
+	width: 80px;
+	height: 85px;
+	top: 150px;
+	left: 200px;
+}
+
+.pfirsich_image_left{
+	position: absolute;
+	transform: rotate(30deg);
+	width: 80px;
+	height: 85px;
+	top: 400px;
+	left: 220px;	
+}
+
+.pfirsich_image_left_bottom{
+	position: absolute;
+	transform: rotate(106deg);
+	width: 70px;
+	height: 80px;
+	top: 280px;
+	left: 45px;	
 }
