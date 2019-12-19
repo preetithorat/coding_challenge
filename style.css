@@ -26,9 +26,15 @@
     left: 105px;
     top: 150px;
 }
+
 .swipe_icon_image{
 	position: absolute;
     left: 120px;
     top: 260px;
 }
 
+.fuzetea_image{
+	position: absolute;
+    left: 105px;
+    top: 150px;
+}
