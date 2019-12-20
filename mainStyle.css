@@ -1,6 +1,6 @@
 *{
-	box-sizing: content-box;
-	margin: 0;;
+	position:absolute;
+	top: 0;
 }
 
 #banner1{
@@ -17,85 +17,54 @@
 }
 
 #animationBanner2 {
-	position:absolute;
 	top: 0;
 	z-index: 3;
 }
 
-#animationBanner3 {
-	position:absolute;
-	top: 0;
-}
-
-#animationBanner4_leftToRight {
-	position:absolute;
-	top: 0;
-}
-
-#animationBanner4_rightToLeft {
-	position:absolute;
-	top: 0;
-}
-
-.background_image{
-  width: 100%;
-  height: auto;
-
-}
-
 .wisch_text_image {
-	position: absolute;
     top: 40px;    
     left: 25px;
 }
 
 .wisch_text_image_banner2{
  	filter: blur(2px);
- 	position: absolute;
     top: 40px;    
     left: 25px;
 }
 
 .ueberrascht_text_image{
-	position: absolute;
     top: 30px;	
 	left: 35px;
 }
 
 .flasche_kontur_image{
-	position: absolute;
     left: 105px;
     top: 150px;
     z-index: 2;
 }
 
 .flasche_hibiskus_image{
-	position: absolute;
     top: 100px;
     left: 105px;
     z-index: 2;
 }
 
 .flaschen_packshot_image{
-	position: absolute;
     top: 120px;
     left: 65px;
     z-index: 2;
 }
 .swipe_icon_image{
-	position: absolute;
     top: 260px;
     left: 120px;
 }
 
 .fuzetea_image{
-	position: absolute;
     top: 410px;
     left: 35px;
 }
 
 .blatt1_image{
-	position: absolute;
 	width: 122px;
 	height:123px;
 	top: 400px;
@@ -103,7 +72,6 @@
 }
 
 .blatt2_image_left{
-	position: absolute;
 	width: 85px;
 	height:89px;
 	top: 200px;
@@ -111,7 +79,6 @@
 }
 
 .blatt2_image_left_center{
-	position: absolute;
 	transform: rotate(20deg);
 	width: 97px;
 	height:98px;
@@ -120,7 +87,6 @@
 }
 
 .blatt2_image_right{
-	position: absolute;
 	transform: rotate(105deg);
 	z-index: 1;
 	width: 80px;
@@ -130,7 +96,6 @@
 }
 
 .blatt2_image_right_center{
-	position: absolute;
 	transform: rotate(-10deg);
 	width: 70px;
 	height:93px;
@@ -139,7 +104,6 @@
 }
 
 .blatt2_image_right_bottom{
-	position: absolute;
 	transform: rotate(90deg);
 	width: 65px;
 	height:85px;
@@ -148,7 +112,6 @@
 }
 
 .hibiskus_image_left_one{
-	position: absolute;	
 	transform: rotate(-40deg);
 	width: 108px;
 	height:85px;
@@ -157,7 +120,6 @@
 }
 
 .hibiskus_image_right_second{
-	position: absolute;
 	transform: rotate(-40deg);
 	width: 118px;
 	height:91px;
@@ -166,7 +128,6 @@
 }
 
 .hibiskus_image_right_third{
-	position: absolute;
 	width: 80px;
 	height: 62px;
 	top: 350px;
@@ -174,7 +135,6 @@
 }
 
 .hibiskus_image_left_fourth{
-	position: absolute;
 	width: 80px;
 	height: 62px;
 	top: 440px;
@@ -182,7 +142,6 @@
 }
 
 .pfirsich_image_right{
-	position: absolute;
 	transform: rotate(10deg);
 	width: 80px;
 	height: 85px;
@@ -191,7 +150,6 @@
 }
 
 .pfirsich_image_left{
-	position: absolute;
 	transform: rotate(30deg);
 	width: 80px;
 	height: 85px;
@@ -200,7 +158,6 @@
 }
 
 .pfirsich_image_left_bottom{
-	position: absolute;
 	transform: rotate(106deg);
 	width: 70px;
 	height: 80px;
@@ -209,41 +166,35 @@
 }
 
 .combo_image{
-	position: absolute;
 	top: 90px;
 	left: 25px;
 	z-index: 1;
 }
 
 .flaschen_bg_image{
-	position: absolute;
 	top: 90px;
 	left: -15px;
 	z-index: 1;
 }
 
 .erlebe_text_image{
-	position: absolute;
     top: 420px;
     left: 110px;
 }
 
 .neu_image{
-	position: absolute;
 	top: 100px;
     left: 225px;
     z-index: 2;
 }
 
 .cta_btn_image{
-	position: absolute;
 	top: 335px;
 	left: 75px;
 	z-index: 2;
 }
 
 .legaline_image{
-	position: absolute;
 	top: 460px;
 	left: 30px;
 	width: 280px;
