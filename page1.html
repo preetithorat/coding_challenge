@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css" ></style>
 </head>
-<body ontouchmove="myFunction(event)">
+
+<body ontouchend="animateHandler(event)">
 	<div id="banner1">
 		<img src="images/background.png" class="background_image" width="320" height="480">
 		<img src="images/wisch_text.png" class="wisch_text_image" >
@@ -14,8 +15,8 @@
 		<img src="images/swipe_icon.png" class="swipe_icon_image">
 		<img src="images/fuzetea.png" class="fuzetea_image">
 	</div>
-<!--
-	<div id="banner2" class="container">
+
+	<div id="banner2">
 		<img src="images/background.png" class="background_image" width="320" height="480">
 		<img src="images/wisch_text.png" class="wisch_text_image_banner2">
 		<img src="images/flasche_hibiskus.png" class="flasche_kontur_image">
@@ -38,7 +39,7 @@
 			<img src="images/pfirsich.png" class="pfirsich_image_right">
 			<img src="images/pfirsich.png" class="pfirsich_image_left">
 			<img src="images/pfirsich.png" class="pfirsich_image_left_bottom">
-		</div>	
+		</div>
 	</div>
 
 	<div id="banner3" class="container">
@@ -87,17 +88,33 @@
 
 		<img src="images/fuzetea.png" class="fuzetea_image">
 	</div>
--->
+
 	<script>
 
-		function myFunction(event){
-			console.log(event);
+		function animateHandler(event){
+			console.log('Swipe detected');
+			document.getElementById("banner1").style.visibility = "hidden";
+			document.getElementById("banner2").style.visibility = "visible";
+			topToBottom();
+			setTimeout(
+				function(){ document.getElementById("banner2").style.visibility = "hidden";
+							document.getElementById("banner3").style.visibility = "visible";
+							bottomToTop();
+							setTimeout(function(){ document.getElementById("banner3").style.visibility = "hidden";
+													document.getElementById("banner4").style.visibility = "visible";
+													leftToRight();
+													rightToLeft();
+													setTimeout(function(){ document.getElementById("banner4").style.visibility = "hidden";
+																		   document.getElementById("banner5").style.visibility = "visible"; 
+													}, 2000);
+							}, 1500);
+			}, 2000);
 		}
 
 		function topToBottom() {
 			var divElement = document.getElementById("animationBanner2");   
-			var startingPoint = -120;
-			var timeInterval = setInterval(frame, 10);
+			var startingPoint = -100;
+			var timeInterval = setInterval(frame, 15);
 			function frame() {
 			    if (startingPoint == 0) {
 			      clearInterval(timeInterval);
@@ -107,7 +124,6 @@
 			    }
 			}
 		}
-
 
 		function bottomToTop() {
 			var divElement = document.getElementById("animationBanner3");   
