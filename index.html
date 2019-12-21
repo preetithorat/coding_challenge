@@ -115,7 +115,7 @@
 		}
 
 		function topToBottom() {
-			var divElement = document.getElementById("animationBanner2");   
+			var elementById = document.getElementById("animationBanner2");   
 			var startingPoint = -100;
 			var timeInterval = setInterval(frame, 15);
 			function frame() {
@@ -123,28 +123,28 @@
 			      clearInterval(timeInterval);
 			    } else {
 			      startingPoint++; 
-			      divElement.style.top = startingPoint + 'px'; 
+			      elementById.style.top = startingPoint + 'px'; 
 			    }
 			}
-			setTimeout(function(){divElement.style.animation = "roll 5s infinite";},1000);
+			setTimeout(function(){elementById.style.animation = "rotate 5s infinite";},1000);
 		}
 
 		function bottomToTop() {
-			var divElement = document.getElementById("animationBanner3");   
+			var elementById = document.getElementById("animationBanner3");   
 			var startingPoint = 80;
 			var timeInterval = setInterval(frame, 10);
 			function frame() {
 			    if (startingPoint == 0) {
 			      clearInterval(timeInterval);
 			    } else {
-			      divElement.style.top = startingPoint + 'px'; 
+					elementById.style.top = startingPoint + 'px'; 
 			      startingPoint--;
 			    }
 			}
 		}
 
 		function leftToRight() {
-			var divElement = document.getElementById("animationBanner4_leftToRight");   
+			var elementById = document.getElementById("animationBanner4_leftToRight");   
 			var startingPoint = -70;
 			var timeInterval = setInterval(frame, 10);
 			function frame() {
@@ -152,13 +152,13 @@
 			      clearInterval(timeInterval);
 			    } else {
 			      startingPoint++; 
-			      divElement.style.left = startingPoint + 'px'; 
+			      elementById.style.left = startingPoint + 'px'; 
 			    }
 			}
 		}
 
 		function rightToLeft() {
-			var divElement = document.getElementById("animationBanner4_rightToLeft");   
+			var elementById = document.getElementById("animationBanner4_rightToLeft");   
 			var startingPoint = 70;
 			var timeInterval = setInterval(frame, 10);
 			function frame() {
@@ -166,7 +166,7 @@
 			      clearInterval(timeInterval);
 			    } else {
 			      startingPoint--;
-			      divElement.style.left = startingPoint + 'px'; 
+			      elementById.style.left = startingPoint + 'px'; 
 			    }
 			}
 		}

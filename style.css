@@ -2,9 +2,7 @@
 	box-sizing: content-box;
 	margin: 0;
 }
-body{
-	background-color: gray;
-}
+
 #banner2{
 	top: 0;
 	visibility: hidden;
@@ -57,9 +55,10 @@ body{
 }
 
 .background_image{
-  width: 100%;
-  height: auto;
-
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .wisch_text_image {
@@ -268,7 +267,7 @@ body{
 	width: 280px;
 }
 
-@keyframes roll {
+@keyframes rotate {
 	0% {
 	  transform: rotate(0);
 	}
