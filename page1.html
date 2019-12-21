@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>This will be the first page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css" ></style>
 </head>
@@ -90,25 +89,28 @@
 	</div>
 
 	<script>
-
+		var isAnimated = false;
 		function animateHandler(event){
 			console.log('Swipe detected');
-			document.getElementById("banner1").style.visibility = "hidden";
-			document.getElementById("banner2").style.visibility = "visible";
-			topToBottom();
-			setTimeout(
-				function(){ document.getElementById("banner2").style.visibility = "hidden";
-							document.getElementById("banner3").style.visibility = "visible";
-							bottomToTop();
-							setTimeout(function(){ document.getElementById("banner3").style.visibility = "hidden";
-													document.getElementById("banner4").style.visibility = "visible";
-													leftToRight();
-													rightToLeft();
-													setTimeout(function(){ document.getElementById("banner4").style.visibility = "hidden";
-																		   document.getElementById("banner5").style.visibility = "visible"; 
-													}, 2000);
-							}, 1500);
-			}, 2000);
+			if(!isAnimated){
+				document.getElementById("banner1").style.visibility = "hidden";
+				document.getElementById("banner2").style.visibility = "visible";
+				topToBottom();
+				setTimeout(
+					function(){ document.getElementById("banner2").style.visibility = "hidden";
+								document.getElementById("banner3").style.visibility = "visible";
+								bottomToTop();
+								setTimeout(function(){ document.getElementById("banner3").style.visibility = "hidden";
+														document.getElementById("banner4").style.visibility = "visible";
+														leftToRight();
+														rightToLeft();
+														setTimeout(function(){ document.getElementById("banner4").style.visibility = "hidden";
+																			document.getElementById("banner5").style.visibility = "visible"; 
+														}, 2000);
+								}, 1500);
+				}, 5000);
+				isAnimated = true;
+			}
 		}
 
 		function topToBottom() {
@@ -123,6 +125,7 @@
 			      divElement.style.top = startingPoint + 'px'; 
 			    }
 			}
+			setTimeout(function(){divElement.style.animation = "roll 5s infinite";},1000);
 		}
 
 		function bottomToTop() {

@@ -35,6 +35,8 @@
 	position:absolute;
 	top: 0;
 	z-index: 3;
+	width: 320px;
+	height: 700px;
 }
 
 #animationBanner3 {
@@ -262,4 +264,13 @@
 	top: 460px;
 	left: 30px;
 	width: 280px;
+}
+
+@keyframes roll {
+	0% {
+	  transform: rotate(0);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
 }
