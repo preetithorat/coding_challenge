@@ -1,52 +1,58 @@
 *{
-	box-sizing: content-box;
-	margin: 0;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	top: 0;
+}
+body{
+	background-image: url('../images/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+}
+
+#banner{
+	width: 320px;
+	height: 480px;
+	position:absolute;
 }
 
 #banner2{
-	top: 0;
 	visibility: hidden;
 	position:absolute;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 #banner3{
-	top: 0;
 	visibility: hidden;
 	position:absolute;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 #banner4{
-	top: 0;
 	visibility: hidden;
 	position:absolute;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 #banner5{
-	top: 0;
 	visibility: hidden;
 	position:absolute;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 #animationBanner2 {
 	position:absolute;
-	top: 0;
-	z-index: 3;
 	width: 320px;
 	height: 700px;
 }
 
 #animationBanner3 {
 	position:absolute;
-	top: 0;
 }
 
 #animationBanner4_leftToRight {
 	position:absolute;
-	top: 0;
 }
 
 #animationBanner4_rightToLeft {
@@ -54,21 +60,14 @@
 	top: 0;
 }
 
-.background_image{
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 .wisch_text_image {
 	position: absolute;
     top: 40px;    
-    left: 25px;
+	left: 25px;
 }
 
 .wisch_text_image_banner2{
- 	filter: blur(2px);
+	animation: changesToBlur 6s infinite;
  	position: absolute;
     top: 40px;    
     left: 25px;
@@ -84,21 +83,20 @@
 	position: absolute;
     left: 105px;
     top: 150px;
-    z-index: 2;
 }
 
 .flasche_hibiskus_image{
 	position: absolute;
     top: 100px;
     left: 105px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .flaschen_packshot_image{
 	position: absolute;
     top: 120px;
     left: 65px;
-    z-index: 2;
+    z-index: 1;
 }
 .swipe_icon_image{
 	position: absolute;
@@ -230,14 +228,12 @@
 	position: absolute;
 	top: 90px;
 	left: 25px;
-	z-index: 1;
 }
 
 .flaschen_bg_image{
 	position: absolute;
 	top: 90px;
 	left: -15px;
-	z-index: 1;
 }
 
 .erlebe_text_image{
@@ -274,4 +270,12 @@
 	100% {
 	  transform: rotate(360deg);
 	}
+}
+
+
+@keyframes changesToBlur{
+	25%{filter: blur(1px);}
+	50%{filter: blur(2px);}
+	75%{filter: blur(4px);}
+	100%{filter: blur(5px);}
 }
